@@ -1,6 +1,6 @@
 #[tokio::main]
 async fn main() -> web3::Result<()> {
-    let transport = web3::transports::Http::new("http://localhost:17888")?;
+    let transport = web3::transports::Http::new("https://jsonapi1.smartmesh.cn")?;
     let web3 = web3::Web3::new(transport);
 
     println!("Calling accounts.");
